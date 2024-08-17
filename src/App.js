@@ -1,15 +1,38 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Weather from "./Weather";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World</h1>
-        <Weather city="Edinburgh" />
-      </header>
+    <div className="Weather-App">
+      <h1>Weather Search Engine </h1>
+      <Weather />
+
+      <footer>
+        This project was coded by{" "}
+        <a
+          href="https://github.com/HabibaU2001"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Habiba Uddin
+        </a>
+        , is open-sourced on{" "}
+        <a
+          href="https://github.com/HabibaU2001/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github{" "}
+        </a>
+        and hosted on{" "}
+        <a
+          href="https://weathify-react.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
+      </footer>
     </div>
   );
 }
