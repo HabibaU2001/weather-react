@@ -13,7 +13,6 @@ export default function Weather() {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: "Friday, 18:00",
     });
   }
 
@@ -48,9 +47,9 @@ export default function Weather() {
       </div>
     );
   } else {
-    const apiKey = "3f6be1c407b0d9d1933561808db358";
+    const apiKey = "8ca7dd4e61360b90fb66918853670e48";
     let city = "London";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}ba&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
