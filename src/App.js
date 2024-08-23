@@ -1,10 +1,12 @@
 import "./App.css";
 import Weather from "./Weather";
+import WeatherSearch from "./WeatherSearch";
 
 function App() {
   return (
     <div className="Weather-App">
       <h1>Weather Search Engine </h1>
+      <WeatherSearch />
       <Weather />
 
       <footer>
