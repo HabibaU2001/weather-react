@@ -1,3 +1,12 @@
+.Weather-App {
+  background: #d9f2ff;
+  max-width: 700px;
+  margin: 45px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+}
+
 .SearchForm {
   border-bottom: 1px solid #f0fbff;
   padding: 0 0 30px 0;
@@ -20,4 +29,39 @@
   color: white;
   font-size: 16px;
   margin-left: 5px;
+}
+
+.Weather {
+  font-family: arial, sans-serif;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.Weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  line-height: 29px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 10px;
 }
