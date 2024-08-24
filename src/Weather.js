@@ -16,6 +16,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city: response.data.name,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -49,7 +50,6 @@ export default function Weather(props) {
               required
               id="search-form-input"
               className="search-form-input"
-              value={city}
               onChange={handleCityChange}
             />
             <input
@@ -59,6 +59,7 @@ export default function Weather(props) {
               autoFocus="on"
             />
           </form>
+          <hr />
           <WeatherInfo data={weatherData} />
         </div>
       </div>
