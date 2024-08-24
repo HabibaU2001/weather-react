@@ -1,12 +1,11 @@
 import "./App.css";
 import Weather from "./Weather";
-import WeatherSearch from "./WeatherSearch";
+import WeatherInfo from "./WeatherInfo";
 
 function App() {
   return (
     <div className="Weather-App">
-      <WeatherSearch />
-      <Weather />
+      <Weather defaultCity="London" />
 
       <footer>
         This project was coded by{" "}
