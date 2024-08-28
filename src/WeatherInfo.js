@@ -10,7 +10,11 @@ export default function WeatherInfo(props) {
 
       <div className="mt-3">
         <div className=" d-flex justify-content-center mb-3">
-          <WeatherIcon code={props.data.icon} alt={props.data.description} />
+          <WeatherIcon
+            code={props.data.icon}
+            size={150}
+            alt={props.data.description}
+          />
         </div>
 
         <div className=" weather-temp d-flex justify-content-center ">
