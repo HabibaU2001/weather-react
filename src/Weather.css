@@ -1,15 +1,18 @@
 .Weather-App {
-  background: #d9f2ff;
+  background-image: url("../img/background-tree.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   max-width: 700px;
-  margin: 45px auto;
-  padding: 30px;
+  width: 100%;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
 }
 
 .SearchForm {
-  border-bottom: 1px solid #f0fbff;
-  padding: 0 0 30px 0;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 30px 0 30px 0;
 }
 
 .search-form-input {
@@ -17,18 +20,18 @@
   border: none;
   border-radius: 6px;
   width: 80%;
-  font-size: 16px;
+  font-size: 18px;
   padding: 15px;
 }
 
 .search-form-button {
-  background: #2e94b9;
+  background: #d4a62c;
   padding: 15px 30px;
   border: none;
   border-radius: 6px;
   color: white;
   font-size: 16px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .Weather {
@@ -61,7 +64,6 @@ li {
 
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
   font-size: 55px;
   line-height: 20px;
   font-weight: 400;
@@ -77,14 +79,16 @@ li {
 .weather-details span {
   margin-left: 20px;
 }
-
+.weather-details {
+  margin-bottom: 20px;
+}
 WeatherIcon {
   display: block;
   margin: 0;
 }
 
 strong {
-  color: #2e94b9;
+  color: #d4a62c;
 }
 
 .SearchForm hr {
@@ -93,6 +97,35 @@ strong {
 }
 
 .WeatherTemperature a {
-  color: #2e94b9;
+  color: #d4a62c;
   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .search-form-input {
+    width: 65%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .search-form-button {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  .Weather h1 {
+    font-size: 43px;
+  }
+
+  .Weather .temperature {
+    font-size: 38px;
+  }
+  .Weather .date {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+  }
+  .weather-details span {
+    font-size: 15px;
+  }
 }
